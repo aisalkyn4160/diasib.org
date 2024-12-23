@@ -1,0 +1,146 @@
+.header{
+	padding: 50px 0 27px;
+	background: no-repeat top/cover ;
+}
+
+.header .container{
+	position: relative;
+}
+.header-content{
+	display: flex;
+	flex-direction: column;
+	gap: 27px;
+}
+.header-top{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 50px;
+}
+.header .logo{
+	width: 32%;
+	min-width: 236px;
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+.logo img{
+	width: 100%;
+	max-width: 383px;
+	min-width: 236px;
+}
+.header-contacts{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.profile{
+	width: 40px;	
+	height: 40px;
+	border-radius: 8px;
+	background: rgba(110, 172, 255, 1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+}
+.burger{
+	display: none;
+	cursor: pointer;
+}
+.burger .close-menu{
+	display: none;
+}
+.header-bottom{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.header-bottom .nav-menu ul{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.nav-menu ul li a{
+	display: inline-block;
+	white-space: nowrap;
+	padding: 12px;
+	transition: all 0.3s ease;
+	border-radius: 8px;
+}
+.nav-menu ul li a:hover{
+	background-color: rgba(110, 172, 255, 1);
+}
+.nav-menu ul li a.active{
+	background-color: rgba(110, 172, 255, 1);
+}
+.header-contacts a{
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+
+@media (max-width: 800px){
+	.header{
+		padding: 20px 0;
+		background-size: 0;
+		background-color: rgb(23,36,62);
+	}
+	.header .container{
+		height: 40px;
+	}
+	.burger{
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+	}
+	.header-content{
+		width: 100%;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		position: absolute;
+		top: 80px;
+		left: -300%;
+		transition: 0.5s;
+		gap: 70px;
+	}
+	.header-bottom .nav-menu ul{
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 8px;
+		gap: 0;
+	}
+	
+	.header-top{
+		justify-content: flex-start;
+		padding-left: 20px;
+	}
+	.header-contacts{
+		flex-direction: column;
+		align-items: flex-start;
+  	}
+	.profile{
+		margin-left: 0px;
+	}
+	.header.mobile-header{
+		width: 100%;
+		height: 100vh;
+		background-color: rgb(23,36,62);
+	}
+	.header.mobile-header .header-content{
+		left: 0px;
+	}
+
+	.header.mobile-header .burger .close-menu{
+		display: block;
+	}
+
+	.header.mobile-header .burger .burger-menu{
+		display: none;
+	}
+}

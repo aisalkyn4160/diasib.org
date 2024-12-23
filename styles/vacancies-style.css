@@ -1,0 +1,184 @@
+.vacancies{
+    padding: 60px 0;
+}
+.vacancies h2{
+    margin-bottom: 40px;
+}
+.vacancies-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.vacancies-list h4{
+    color: rgba(26, 26, 26, 1);
+}
+.vacancy-ttl-btn{
+    background: rgba(255, 255, 255, 1);
+    border-radius: 24px;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+.vacancy-ttl-btn.active{
+    background-color: transparent;
+    /* margin-bottom: 15px; */
+}
+.vacancy-ttl-btn.active h4{
+    color: rgba(255, 255, 255, 1);
+}
+.collapse-btn{
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.vacancy-ttl-btn.active .collapse-btn svg path{
+    stroke: rgba(110, 172, 255, 1);
+}
+.vacancy-ttl-btn.active .collapse-btn svg{
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out;
+}
+.vacancy-info{
+    font-weight: 400;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0 24px;
+    padding-top: 24px;
+}
+.vacancy-info ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.vacancy-info ul li{
+    list-style-type: disc;
+    margin-left: 20px
+}
+.salary{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.salary h4{
+    color: rgba(255, 255, 255, 1);
+}
+.salary span{
+    font-family: 'Cygre Medium';
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 60px;
+}
+.vacancy-info a{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    padding-bottom: 24px;
+    transition: color 0.3s ease;
+}
+.vacancy-info a:hover{
+    color: rgba(110, 172, 255, 1);
+}
+.vacancy-info a svg path{
+    transition: all 0.3s ease;
+}
+.vacancy-info a:hover svg path{
+    stroke: rgba(110, 172, 255, 1);
+}
+
+.vacancies-form{
+    padding: 60px 0;
+}
+.vacancies-form h2{
+    text-align: left;
+    margin-bottom: 40px;
+}
+.form-block{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+.form-contacts p{
+    margin-bottom: 24px;
+}
+.form-contacts ul li{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;  
+    gap: 12px;
+    margin-bottom: 12px;
+}
+.form-block form{
+    width: calc(100% - 306px);
+}
+.form-block .form-btn{
+    flex-direction: column;
+}
+.form-block .form-file{
+    width: 100%;
+}
+.form-block .file-label{
+    color: rgba(110, 172, 255, 1);
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, 1);
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 16px;
+}
+.form-block .file-label p{
+    color: rgba(139, 137, 137, 1);
+    font-size: 13px;
+    font-weight: 400;
+}
+.form-block .form-btn button{
+    width: 100%;
+    gap: 16px;
+}
+.form-checkbox{
+    display: flex;
+    gap: 24px;
+}
+.checkbox-inp{
+    flex-shrink: 0;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border-radius: 7px;
+    border: 2px solid rgba(110, 172, 255, 1);
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+}
+
+.checkbox-inp::after{
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    background-image: url('../assets/icons/Vector.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 11px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.checkbox-inp:checked::after{
+    opacity: 1;
+}

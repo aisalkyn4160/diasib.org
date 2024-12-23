@@ -1,0 +1,85 @@
+.sertificates{
+    padding: 60px 0;
+}
+.sertificates-wrapper{
+    position: relative;
+}
+.sertificates h2{
+    margin-bottom: 40px;
+}
+.sertificates-swiper.swiper{
+    position: static;
+    width: 85%;
+}
+.sertificates-swiper img{
+    width: 100%;
+    aspect-ratio: 1/1.42;
+    object-fit: cover;
+}
+
+.sertificates-swiper .swiper-button-next::after, 
+.sertificates-swiper .swiper-button-prev::after{
+    color: rgba(255, 255, 255, .5);
+    font-size: 30px;
+}
+.sertificates-swiper .swiper-button-prev{
+    left: 20px;
+
+}
+.sertificates-swiper .swiper-button-next{
+    right: 20px;
+}
+@media (max-width: 1000px){
+    .sertificates-swiper .swiper-button-prev{
+        left: 0px;
+    
+    }
+    .sertificates-swiper .swiper-button-next{
+        right: 0px;
+    }
+}
+@media (max-width: 600px){
+    .sertificates{
+        padding: 12px 0 25px;
+    }
+    .sertificates-wrapper{
+        padding-bottom: 104px;
+    }
+    .sertificates-swiper.swiper{
+        width: 100%;
+    }
+    .sertificates-swiper .swiper-button-prev,
+    .sertificates-swiper .swiper-button-next{
+        top: auto;
+        bottom: 0;
+        width: 64px;
+        height: 64px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sertificates-swiper .swiper-button-prev{
+        left: calc(50% - 40px);
+        transform: translateX(-50%);
+    
+    }
+    .sertificates-swiper .swiper-button-next{
+        right: calc(50% - 40px);
+        transform: translateX(50%);
+    }
+    .sertificates-swiper .swiper-button-next::after, 
+    .sertificates-swiper .swiper-button-prev::after{
+        color: rgba(0, 62, 250, 1);
+        font-size: 24px;
+    }
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        opacity: 1;
+        background-color: transparent;
+    }
+    .sertificates-swiper .swiper-button-prev.swiper-button-disabled::after,
+    .sertificates-swiper .swiper-button-next.swiper-button-disabled::after{
+        color: rgba(255, 255, 255, .5);
+    }
+}
