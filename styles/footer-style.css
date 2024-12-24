@@ -19,6 +19,13 @@
 .footer-top .nav-menu{
     margin-top: -5px;
 }
+.footer-top .nav-menu ul li a{
+    padding: 10px 0;
+}
+.footer-top .nav-menu ul li a:hover{
+    color: rgba(110, 172, 255, 1);
+    background-color: transparent;
+}
 .footer-contacts{
     display: grid;
     grid-template-columns: 78px 1fr;

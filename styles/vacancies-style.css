@@ -18,14 +18,13 @@
     padding: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     transition: all 0.3s ease-out;
     cursor: pointer;
 }
 .vacancy-ttl-btn.active{
     background-color: transparent;
-    /* margin-bottom: 15px; */
 }
 .vacancy-ttl-btn.active h4{
     color: rgba(255, 255, 255, 1);
@@ -73,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
     padding: 24px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -165,6 +165,7 @@
     background-color: transparent;
     padding: 0;
     position: relative;
+    cursor: pointer;
 }
 
 .checkbox-inp::after{
@@ -181,4 +182,27 @@
 }
 .checkbox-inp:checked::after{
     opacity: 1;
+}
+
+@media (max-width: 760px) {
+    .form-block{
+        flex-direction: column;
+    }
+    .form-block form{
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .vacancies,
+    .vacancies-form{
+        padding: 30px 0;
+    }
+    .collapse-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .salary span{
+        font-size: 30px;
+        line-height: 40px;
+    }
 }

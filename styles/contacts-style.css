@@ -98,7 +98,7 @@ textarea{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
 }
 .form-file{
     position: relative;
@@ -171,6 +171,10 @@ form button:hover{
         margin-top: 10px;
         font-size: 14px;
         gap: 50px;
+    }
+    input, textarea{
+        font-size: 16px;
+        padding: 20px;
     }
     .form-btn{
         flex-direction: column;

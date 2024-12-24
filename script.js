@@ -16,6 +16,3 @@ const headerLogo = document.querySelector(".header .logo");
 
 headerTop.style.height = headerLogo.offsetHeight + "px";
 
-const layout = document.querySelector(".layout");
-const layoutHeight = layout.offsetHeight;
-console.log(layoutHeight);

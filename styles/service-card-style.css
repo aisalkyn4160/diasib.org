@@ -97,6 +97,7 @@
     margin-bottom: 12px;
 }
 .steps-wrapper svg{
+    flex-shrink: 0;
     margin-top: 20px;
 }
 
@@ -112,7 +113,103 @@
     background-color: rgba(0, 62, 250, 1);
     border-radius: 12px;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
 }
 .download-btn:hover{
     background-color: rgba(110, 172, 255, 1);
+}
+
+@media (max-width: 1060px){
+    .methods-list,
+    .objects-list{
+        grid-template-columns:calc(100% - 328px) 1fr;
+        font-size: 22px;
+    }
+    .steps-wrapper div{
+        max-width: 100px;
+    }
+    .steps-wrapper span{
+        font-size: 14px;
+    }
+}
+@media (max-width: 760px){
+    .methods-list{
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+        gap: 25px;
+    }
+    .methods-list li{
+        list-style-type: disc;
+    }
+    .objects-list{
+        grid-template-columns: calc(100% - 230px) 1fr;
+    }
+    .steps-wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service-card-main .form-btn{
+        flex-direction: column;
+    }
+    .download-btn{
+        max-width: 100%;
+    }
+    .service-card-main .form-btn button{
+        width: 100%;
+    }
+    .service-card-main .form-btn .form-file{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .objects-list{
+        grid-template-columns: 1fr;
+    }
+    .control,
+    .methods,
+    .objects,
+    .steps{
+        padding: 30px 0;
+    }
+    .control-wrapper{
+        padding-bottom: 104px;
+    }
+    .control-swiper.swiper{
+        width: 100%;
+    }
+    .control-swiper .swiper-button-prev,
+    .control-swiper .swiper-button-next{
+        top: auto;
+        bottom: 0;
+        width: 64px;
+        height: 64px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+    .control-swiper .swiper-button-prev{
+        left: calc(50% - 40px);
+        transform: translateX(-50%);
+    }
+    .control-swiper .swiper-button-next{
+        right: calc(50% - 40px);
+        transform: translateX(50%);
+    }
+   
+    .control-swiper .swiper-button-next::after, 
+    .control-swiper .swiper-button-prev::after{
+        color: rgba(0, 62, 250, 1);
+        font-size: 24px;
+    }
+    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+        opacity: 1;
+        background-color: transparent;
+    }
+    .control-swiper .swiper-button-prev.swiper-button-disabled::after,
+    .control-swiper .swiper-button-next.swiper-button-disabled::after{
+        color: rgba(255, 255, 255, .5);
+    }
+
 }
