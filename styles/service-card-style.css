@@ -40,18 +40,6 @@
     aspect-ratio: 1/1.1;
     object-fit: cover;
 }
-.control-swiper .swiper-button-next::after, 
-.control-swiper .swiper-button-prev::after{
-    color: rgba(255, 255, 255, .5);
-    font-size: 30px;
-}
-.control-swiper .swiper-button-prev{
-    left: 20px;
-}
-.control-swiper .swiper-button-next{
-    right: 20px;
-}
-
 .methods,
 .objects,
 .steps{
@@ -177,39 +165,6 @@
     .control-swiper.swiper{
         width: 100%;
     }
-    .control-swiper .swiper-button-prev,
-    .control-swiper .swiper-button-next{
-        top: auto;
-        bottom: 0;
-        width: 64px;
-        height: 64px;
-        background-color: rgba(255, 255, 255, 1);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;    
-    }
-    .control-swiper .swiper-button-prev{
-        left: calc(50% - 40px);
-        transform: translateX(-50%);
-    }
-    .control-swiper .swiper-button-next{
-        right: calc(50% - 40px);
-        transform: translateX(50%);
-    }
-   
-    .control-swiper .swiper-button-next::after, 
-    .control-swiper .swiper-button-prev::after{
-        color: rgba(0, 62, 250, 1);
-        font-size: 24px;
-    }
-    .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
-        opacity: 1;
-        background-color: transparent;
-    }
-    .control-swiper .swiper-button-prev.swiper-button-disabled::after,
-    .control-swiper .swiper-button-next.swiper-button-disabled::after{
-        color: rgba(255, 255, 255, .5);
-    }
+    
 
 }

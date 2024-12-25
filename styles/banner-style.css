@@ -58,6 +58,10 @@
     .banner{
         padding-bottom: 40px;
     }
+    .banner-swiper .swiper-button-prev,
+    .banner-swiper .swiper-button-next{
+        top: 50%;
+    }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
         bottom: 20px;
     }
