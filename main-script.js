@@ -13,7 +13,7 @@ const swiper = new Swiper('.banner-swiper.swiper', {
 });
 
 const projectsSwiper = new Swiper('.projects-swiper.swiper', {
-    loop: true,
+    // loop: true,
 
     navigation: {
     nextEl: '.swiper-button-next',
@@ -24,7 +24,7 @@ const projectsSwiper = new Swiper('.projects-swiper.swiper', {
         320: {
             slidesPerView: 1, 
         },
-        500: {
+        450: {
             slidesPerView: 2,
         },
         800: {
@@ -50,7 +50,7 @@ const swiper2 = new Swiper('.sertificates-swiper.swiper', {
         320: {
             slidesPerView: 1,
         },
-        500: {
+        450: {
             slidesPerView: 2,
             spaceBetween: 16,
         },
@@ -74,7 +74,7 @@ const swiper3 = new Swiper('.partners-swiper.swiper', {
         320: {
             slidesPerView: 1, 
         },
-        500: {
+        450: {
             slidesPerView: 2,
         },
         768: {
